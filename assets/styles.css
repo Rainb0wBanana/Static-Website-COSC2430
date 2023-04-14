@@ -1,18 +1,41 @@
+* {
+    font-family: "Nunito", sans-serif;
+}
+
 body {
     margin: 0;
 }
 
-
-header {
-    background-color: #023e8a;
+.header-div {
     display: flex;
     justify-content: space-between;
+    width: 60%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color:#03045E;
+}
+
+main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #ADE8F4;
+    flex-direction: column;
+}
+
+section {
+    display: flex;
+    width: 80%;
+    height: 800px;
+    background-color: #03045E;
+    margin-top: 50px;
 }
 
 #logo {
-    height:100px;
-    width:100px;
-
+    width: 100px;
 }
 
 #logo:hover{
@@ -21,10 +44,54 @@ header {
 
 .nav-links {
     display: flex;
+    width: 150px;
+    align-items: center;
 }
 
 nav {
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
+    width: 70%;
+}
+
+.white-text {
+    color: #caf0f8;
+}
+
+.center-text {
+    justify-content: center;
+    align-items: center;
+}
+
+.category {
+    display: flex;
+    justify-content: center;
+    height:10%;
+    width:100%;
+}
+
+a {
+    display: flex;
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: #caf0f8;
+}
+
+a:hover {
+    background-color:#0077b6;
+}
+
+.full{
+    display: flex;
+    width:100%;
+    height:100%;
+}
+
+.book-div {
+    display: flex;
+    height:90%;
+    justify-content: space-evenly;
 }
