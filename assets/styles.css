@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+}
+
+
+header {
+    background-color: #023e8a;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    height:100px;
+    width:100px;
+
+}
+
+#logo:hover{
+    background-color: #0077b6;
+}
+
+.nav-links {
+    display: flex;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
