@@ -32,6 +32,8 @@ section {
     height: 800px;
     background-color: #03045E;
     margin-top: 50px;
+    flex-direction: column;
+    border-radius: 30px;
 }
 
 #logo {
@@ -94,4 +96,9 @@ a:hover {
     display: flex;
     height:90%;
     justify-content: space-evenly;
+}
+
+.book {
+
+    width: 33%;
 }
