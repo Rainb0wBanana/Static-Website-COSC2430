@@ -3,13 +3,9 @@
     font-family: "Nunito", sans-serif;
 }
 
-:root{
-    --color-primary: #caf0f8;
-}
-
 body {
     margin: 0;
-    background-color: #ADE8F4;
+    background-color: white;
 }
 
 .header-div {
@@ -22,7 +18,7 @@ body {
 header {
     display: flex;
     justify-content: center;
-    background-color:#03045E;
+    background-color: #b2cefe;
     align-items: center;
 }
 
@@ -37,25 +33,26 @@ main {
 section {
     display: flex;
     width: 80%;
-    height: 500px;
-    background-color: #03045E;
     margin-top: 50px;
     flex-direction: column;
     border-radius: 30px;
 }
 
-#logo {
+#logo-text {
     display: flex;
     align-items: center;
-    color: var(--color-primary);
     font-size: 3rem;
+    margin-left: 5px;
+}
+
+#logo-picture {
+    width: 90px;
 }
 
 ul {
     margin: 0px;
     list-style-type: none;
     display: flex;
-    gap: 30px;
     justify-content: flex-end;
 }
 
@@ -77,10 +74,6 @@ footer nav {
     justify-content: flex-end;
 }
 
-.white-text {
-    color: #caf0f8;
-}
-
 .center-text {
     justify-content: center;
     align-items: center;
@@ -91,6 +84,7 @@ footer nav {
     justify-content: center;
     height:10%;
     width:100%;
+    margin-bottom: 20px;
 }
 
 a {
@@ -99,16 +93,20 @@ a {
 }
 
 a:link, a:visited {
-    color: #caf0f8;
+    color: black;
 }
 
 a:hover {
-    color: aqua;
+    text-decoration: underline;
+}
+
+.category a {
+    color: black;
+
 }
 
 .category a:hover {
-    background-color: transparent;
-    color: aqua;
+    text-decoration: underline;
 }
 
 .full{
@@ -124,21 +122,36 @@ a:hover {
 }
 
 .book {
+    width: 25%;
+}
 
-    width: 33%;
+.book img {
+    width:100%;
+    aspect-ratio: 2 / 3;
+}
+
+.book img:hover {
+    scale: 1.02;
 }
 
 footer {
+    padding-top: 25px;
+    padding-bottom: 15px;
     margin-top: 50px;
     display: flex;
     justify-content: center;
-    background-color:#03045E;
+    background-color:#b2cefe;
     align-items: center;
 
 }
 
 li {
     font-size: 3rem;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-collapse: collapse;
 }
 
 h2 {
