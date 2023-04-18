@@ -1,35 +1,43 @@
 * {
+    font-size: 62.5%;
     font-family: "Nunito", sans-serif;
+}
+
+:root{
+    --color-primary: #caf0f8;
 }
 
 body {
     margin: 0;
+    background-color: #ADE8F4;
 }
 
 .header-div {
     display: flex;
     justify-content: space-between;
-    width: 60%;
+    width: 95%;
+    align-content: stretch;
 }
 
 header {
     display: flex;
     justify-content: center;
     background-color:#03045E;
+    align-items: center;
 }
 
 main {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background-color: #ADE8F4;
+    
     flex-direction: column;
 }
 
 section {
     display: flex;
     width: 80%;
-    height: 800px;
+    height: 500px;
     background-color: #03045E;
     margin-top: 50px;
     flex-direction: column;
@@ -37,11 +45,18 @@ section {
 }
 
 #logo {
-    width: 100px;
+    display: flex;
+    align-items: center;
+    color: var(--color-primary);
+    font-size: 3rem;
 }
 
-#logo:hover{
-    background-color: #0077b6;
+ul {
+    margin: 0px;
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
 }
 
 .nav-links {
@@ -52,9 +67,14 @@ section {
 
 nav {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+}
+
+footer nav {
     justify-content: flex-end;
-    flex-direction: row;
-    width: 70%;
 }
 
 .white-text {
@@ -75,7 +95,7 @@ nav {
 
 a {
     display: flex;
-    text-decoration: none;
+    text-decoration: none; 
 }
 
 a:link, a:visited {
@@ -83,7 +103,12 @@ a:link, a:visited {
 }
 
 a:hover {
-    background-color:#0077b6;
+    color: aqua;
+}
+
+.category a:hover {
+    background-color: transparent;
+    color: aqua;
 }
 
 .full{
@@ -101,4 +126,21 @@ a:hover {
 .book {
 
     width: 33%;
+}
+
+footer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    background-color:#03045E;
+    align-items: center;
+
+}
+
+li {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.7rem;
 }
