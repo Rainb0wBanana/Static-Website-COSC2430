@@ -1,6 +1,19 @@
 * {
+    box-sizing: border-box;
     font-size: 62.5%;
     font-family: "Nunito", sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.7rem;
+}
+
+h3 {
+    font-size: 2.3rem;
 }
 
 body {
@@ -8,25 +21,18 @@ body {
     background-color: white;
 }
 
-.header-div {
-    display: flex;
-    justify-content: space-between;
-    width: 95%;
-    align-content: stretch;
-}
-
 header {
     display: flex;
     justify-content: center;
     background-color: #b2cefe;
     align-items: center;
+    height: 100px;
 }
 
 main {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    
     flex-direction: column;
 }
 
@@ -35,18 +41,75 @@ section {
     width: 80%;
     margin-top: 50px;
     flex-direction: column;
-    border-radius: 30px;
+    align-items: center;
+}
+
+.breadcrumb li {
+    border: none;
+}
+
+.breadcrumb a:after {
+    position: relative;
+    content: "";
+    left: 12px;
+    top: 10px;
+    width: 10px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    transform: rotate(-45deg);
+}
+
+
+.picture-section {
+    flex-direction: row;
+}
+
+.detail-section {
+    padding: 15px;
+    background-color: #b2cefe;
+    display: block;
+}
+
+.detail-section h1 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 5rem;
+}
+
+.detail-section h2 {
+    margin-top: 0;
+    font-size: 4rem;
+}
+
+.detail-section p {
+    font-size: 2rem;
+}
+
+footer {
+    padding-top: 25px;
+    padding-bottom: 15px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    background-color:#b2cefe;
+    align-items: center;
+}
+#logo {
+    display: flex;
+    align-items: center;
 }
 
 #logo-text {
     display: flex;
     align-items: center;
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-left: 5px;
 }
 
 #logo-picture {
-    width: 90px;
+    width:80px;
+    height: 80px;
 }
 
 ul {
@@ -56,10 +119,12 @@ ul {
     justify-content: flex-end;
 }
 
-.nav-links {
-    display: flex;
-    width: 150px;
-    align-items: center;
+li {
+    font-size: 4rem;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 nav {
@@ -68,23 +133,6 @@ nav {
     align-items: center;
     width: 80%;
     height: 100%;
-}
-
-footer nav {
-    justify-content: flex-end;
-}
-
-.center-text {
-    justify-content: center;
-    align-items: center;
-}
-
-.category {
-    display: flex;
-    justify-content: center;
-    height:10%;
-    width:100%;
-    margin-bottom: 20px;
 }
 
 a {
@@ -100,19 +148,18 @@ a:hover {
     text-decoration: underline;
 }
 
-.category a {
-    color: black;
 
+
+footer nav {
+    justify-content: flex-end;
 }
 
-.category a:hover {
-    text-decoration: underline;
-}
-
-.full{
+.category {
     display: flex;
+    justify-content: center;
+    height:10%;
     width:100%;
-    height:100%;
+    margin-bottom: 20px;
 }
 
 .book-div {
@@ -130,30 +177,259 @@ a:hover {
     aspect-ratio: 2 / 3;
 }
 
+.book div h3 {
+    text-align: center;
+    vertical-align: center;
+}
+
 .book img:hover {
     scale: 1.02;
 }
 
-footer {
-    padding-top: 25px;
-    padding-bottom: 15px;
+#page-header {
     margin-top: 50px;
+}
+
+.contact {
+    background-color: #b2cefe;
+    width:40%;
+}
+
+/* Making the form a table */
+
+form { 
+    display: table;
+    margin: 20px;
+}
+p {
+    display: table-row;
+}
+label {
+    display: table-cell;
+    text-align: right;
+    padding-right: 5px;
+    vertical-align: center;
+}
+input {
+    display: table-cell;
+}
+button {
+    display: table-cell;
+    scale: 1;
+    font-size: 2rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #eee;
+    margin-top: 15px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+button:hover {
+    background-color: #ccc;
+}
+
+#submit-label {
+    text-align: left;
+}
+
+label, select, input {
+    margin: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    border: none;
+    outline: none;
+}
+
+input:hover {
+    background-color: #ccc;
+}
+
+select {
+    cursor: pointer;
+}
+
+textarea {
+    font-size: 2rem;
+    resize: none;
+    margin-top: 10px;
+    overflow: auto;
+    border: none;
+    outline: none;
+}
+
+/* Red color for required asterisk "*" */
+label span {
+    font-size: 2rem;
+    color: red;
+}
+
+/* Styling the checkbox */
+.container-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 2rem;
+    text-align: left;
+}
+
+/* Hiding the default checkbox */
+.container-checkbox input {
+    opacity: 0;
+}
+
+/* Creating a new checkbox */
+.checkmark-tick {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* Mouse hover animation for checkbox */
+.container-checkbox:hover input ~ .checkmark-tick {
+    background-color: #ccc;
+}
+
+/* Checkbox checked color */
+.container-checkbox input:checked ~ .checkmark-tick {
+    background-color: #2196F3;
+}
+
+/* Creating the checkmark-tick but is hidden when not checked */
+.checkmark-tick:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Modifying the checkmark-tick */
+.container-checkbox .checkmark-tick:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+/* Showing the checkmark-tick when checked */
+.container-checkbox input:checked ~ .checkmark-tick:after {
+    display: block;
+}
+
+
+/* Styling the radios label */
+.container-radio {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 2rem;
+    text-align: left;
+}
+
+/* Hiding the default radios */
+
+.container-radio input {
+    opacity: 0;
+}
+
+/* Creating a new radio button */
+
+.checkmark-radio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* Mouse hover animation for radio */
+.container-radio:hover input ~ .checkmark-radio {
+    background-color: #ccc;
+}
+
+/* Radio checked color */
+.container-radio input:checked ~ .checkmark-radio {
+    background-color: #2196F3;
+}
+
+/* Creating the checkmark-radio but is hidden when not checked */
+.checkmark-radio:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Showing the checkmark-radio when checked */
+.container-radio input:checked ~ .checkmark-radio:after {
+    display: block;
+}
+
+/* Modifying the checkmark-radio */
+.container-radio .checkmark-radio:after {
+    left: 9px;
+    top: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+.left-container {
+    width:66%;
+}
+
+.right-container {
     display: flex;
     justify-content: center;
-    background-color:#b2cefe;
     align-items: center;
-
+    flex-direction: column;
+    width: 33%;
 }
 
-li {
-    font-size: 3rem;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-collapse: collapse;
+.right-container h1 {
+    font-size: 5rem;
 }
 
-h2 {
-    font-size: 2.7rem;
+.right-container button {
+    font-size: 5rem;
+}
+
+.book-images {
+    display: flex;
+    flex-direction: row;
+}
+
+.cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:50%;
+}
+.cover img {
+    aspect-ratio: 2 / 3;
+    width:80%;
+}
+.small {
+    display: flex;
+    width:50%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.small img {
+    aspect-ratio: 2 / 3;
+    width: 25%;
 }

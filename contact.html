@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/images/logo.png" type="image/x-icon">
+    <!-- <a href="https://www.flaticon.com/free-icons/utopia" title="utopia icons">Utopia icons created by Good Ware - Flaticon</a> -->
+</head>
+<body>
+    <header>    
+        <nav>
+              <div>
+                <a id="logo" href="index.html">
+                    <img id="logo-picture" src="assets/images/logo.png" alt="Booktopia logo">
+                    <h1 id="logo-text">Booktopia</h1>
+                </a>
+              </div>
+              <ul>
+                <li>    
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="category_1.html">Fiction</a>
+                </li>
+                <li>
+                    <a href="category_2.html">Non-fiction</a>
+                </li>
+              </ul>  
+        </nav>
+    </header>
+
+    <main>
+        <h1 id="page-header">Contact Us</h1>
+        <section class="contact">
+            <form method="post">
+                <p>
+                    <label for="contact-purpose">Contact purpose:<span>*</span></label>
+                    <select name="contact-purpose" id="contact-purpose" required>
+                        <option value="Sell books">I want to sell books</option>
+                        <option value="Buy books">I want to buy books</option>
+                    </select>
+                </p>
+
+
+                <p>
+                    <label for="name">Name:<span>*</span></label>
+                    <input name="name" id="name" type="text" required>
+                </p>
+
+
+                <p>
+                    <label for="email">Email:<span>*</span></label>
+                    <input name="email" id="email" type="text" required>
+                </p>
+
+
+                <p>
+                    <label for="phone">Phone:<span>*</span></label>
+                    <input name="phone" id="phone" type="text" required>
+                </p>
+
+
+                <p>
+                    <label>Contact Preferences:<span>*</span></label>
+                    
+                    <label class="container-checkbox">By email
+                        <input type="checkbox" id="prefer-email" name="contact-preference" value="By-email" required>
+                        <span class="checkmark-tick"></span>
+                    </label>
+                    
+                    <label class="container-checkbox">By phone
+                        <input type="checkbox" id="prefer-phone" name="contact-preference" value="By-phone">
+                        <span class="checkmark-tick"></span>
+                    </label>
+                </p>
+                
+                
+                <p>
+                    <label for="newsletter">Receive weekly newsletter:<span>*</span></label>
+                    
+                    <label class="container-radio">Yes
+                        <input type="radio" id="yes" name="weekly-newsletter" value="Yes" checked="checked">
+                        <span class="checkmark-radio"></span>
+                    </label>
+                    
+                    <label class="container-radio">No
+                        <input type="radio" id="no" name="weekly-newsletter" value="No">
+                        <span class="checkmark-radio"></span>
+                    </label>
+                </p>
+                
+                
+                <p>
+                    <label for="notes">Extra notes:</label>
+                    
+                    <textarea name="" id="" cols="25" rows="5" placeholder="Anything you want us to know?"></textarea>
+                </p>
+
+
+                <p>
+
+                    <label><button type="reset">Clear</button></label>
+                    <label id="submit-label"><button type="submit">Submit</button></label>
+                </p>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Privacy Policy
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Terms
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Copyright
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+    </footer>
+    
+</body>
+</html>
