@@ -243,6 +243,7 @@ label, select, input {
 }
 
 input:hover {
+    transition: 0.3s linear;
     background-color: #ccc;
 }
 
@@ -293,6 +294,7 @@ label span {
 
 /* Mouse hover animation for checkbox */
 .container-checkbox:hover input ~ .checkmark-tick {
+    transition: 0.3s linear;
     background-color: #ccc;
 }
 
@@ -356,6 +358,7 @@ label span {
 
 /* Mouse hover animation for radio */
 .container-radio:hover input ~ .checkmark-radio {
+    transition: 0.3s linear;
     background-color: #ccc;
 }
 
@@ -404,6 +407,11 @@ label span {
 
 .right-container button {
     font-size: 5rem;
+}
+
+.right-container button:hover {
+    transition: 0.3s linear;
+    background-color: #b2cefe;
 }
 
 .book-images {
