@@ -1,0 +1,124 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Nguyen Hoang Minh
+ID: s3977773
+Acknowledgement: 
+Utopia icons created by Good Ware - Flaticon (https://www.flaticon.com/free-icons/utopia)
+CSS and HTML inspirations from w3schools.com and stackoverflow.com:
+https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
+https://stackoverflow.com/questions/4309950/how-to-align-input-forms-in-html
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/images/logo.png" type="image/x-icon">
+    <!-- <a href="https://www.flaticon.com/free-icons/utopia" title="utopia icons">Utopia icons created by Good Ware - Flaticon</a> -->
+</head>
+<body>
+    <header>    
+        <nav>
+              <div>
+                <a id="logo" href="index.html">
+                    <img id="logo-picture" src="assets/images/logo.png" alt="Booktopia logo">
+                    <h1 id="logo-text">Booktopia</h1>
+                </a>
+              </div>
+              <ul>
+                <li>    
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="category_1.html">Fiction</a>
+                </li>
+                <li>
+                    <a href="category_2.html">Non-fiction</a>
+                </li>
+              </ul>  
+        </nav>
+    </header>
+
+    <main>
+        <section class="breadcrumb">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="category_1.html">Fiction</a>
+                </li>
+                <li>
+                    <p>Stardust</p>
+                </li>
+            </ul>
+        </section>
+        <section class="picture-section">    
+            <div class="left-container">
+                <div class="book-images">
+                    <div class="cover">
+                        <img src="assets/images/fiction-fantasy/book11.png" alt="Stardust">
+                    </div>
+                    <div class="small">
+                        <img src="assets/images/fiction-fantasy/book11-1.png" alt="Stardust">
+                        <img src="assets/images/fiction-fantasy/book11-2.png" alt="Stardust">
+                        <img src="assets/images/fiction-fantasy/book11-3.png" alt="Stardust">
+                    </div>
+                </div>
+            </div>
+            <div class="right-container">
+                <h1>$10.99 USD</h1>
+                <button>Add to cart</button>
+            </div>
+        </section>
+        <section class="detail-section">
+            <h1>Stardust</h1>
+            <h2>Neil Gaiman</h2>
+            <p>Tristran Thorn will do anything to win the cold heart of beautiful Victoria Forester—even fetch her the star they watch fall from the night sky. But to do so, he must enter the unexplored lands on the other side of the ancient wall that gives their tiny village its name. Beyond that stone barrier, Tristran learns, lies Faerie...and the most exhilarating adventure of the young man's life.</p>
+        </section>
+    </main>
+
+    <footer>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Privacy Policy
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Terms
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Copyright
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+    </footer>
+</body>
+</html>

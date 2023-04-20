@@ -1,0 +1,158 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Nguyen Hoang Minh
+ID: s3977773
+Acknowledgement: 
+Utopia icons created by Good Ware - Flaticon (https://www.flaticon.com/free-icons/utopia)
+CSS and HTML inspirations from w3schools.com and stackoverflow.com:
+https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
+https://stackoverflow.com/questions/4309950/how-to-align-input-forms-in-html
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/images/logo.png" type="image/x-icon">
+    <!-- <a href="https://www.flaticon.com/free-icons/utopia" title="utopia icons">Utopia icons created by Good Ware - Flaticon</a> -->
+</head>
+
+<!-- Start of page -->
+<body>
+
+    <!-- Start of header section -->
+    <header>    
+
+        <!-- Navigation bar -->
+        <nav>
+
+            <!-- Logo div with link to home page -->
+            <div>
+                <a id="logo" href="index.html">
+                    <img id="logo-picture" src="assets/images/logo.png" alt="Booktopia logo">
+                    <h1 id="logo-text">Booktopia</h1>
+                </a>
+            </div>
+
+            <!-- Actual navigation bar with links -->
+            <ul>
+                <li>    
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="category_1.html">Fiction</a>
+                </li>
+                <li>
+                    <a href="category_2.html">Non-fiction</a>
+                </li>
+            </ul>  
+        </nav>
+    </header>
+    <!-- End of header section -->
+
+    <!-- Start of Main section -->
+    <main>
+
+        <!-- Breadcrumb section -->
+        <section class="breadcrumb">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="category_1.html">Fiction</a>
+                </li>
+                <li>
+                    <p>The Love Hypothesis</p>
+                </li>
+            </ul>
+        </section>
+        
+        <!-- Picture and price section -->
+        <section class="picture-section">    
+
+            <!-- Pictures div -->
+            <div class="left-container">
+                <div class="book-images">
+                    <div class="cover">
+                        <img src="assets/images/fiction-romance/book10.png" alt="The love hypothesis">
+                    </div>
+                    <div class="small">
+                        <img src="assets/images/fiction-romance/book10-1.png" alt="The love hypothesis">
+                        <img src="assets/images/fiction-romance/book10-2.png" alt="The love hypothesis">
+                        <img src="assets/images/fiction-romance/book10-3.png" alt="The love hypothesis">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Price div -->
+            <div class="right-container">
+                <h1>$10.70 USD</h1>
+                <button>Add to cart</button>
+            </div>
+        </section>
+
+        <!-- Book description section -->
+        <section class="detail-section">
+            <h1>The Love Hypothesis</h1>
+            <h2>Ali Hazelwood</h2>
+            <p>As a third-year Ph.D. candidate, Olive Smith doesn't believe in lasting romantic relationships--but her best friend does, and that's what got her into this situation. Convincing Anh that Olive is dating and well on her way to a happily ever after was always going to take more than hand-wavy Jedi mind tricks: Scientists require proof. So, like any self-respecting biologist, Olive panics and kisses the first man she sees.</p>
+            <br>
+            <p>That man is none other than Adam Carlsen, a young hotshot professor--and well-known ass. Which is why Olive is positively floored when Stanford's reigning lab tyrant agrees to keep her charade a secret and be her fake boyfriend. But when a big science conference goes haywire, putting Olive's career on the Bunsen burner, Adam surprises her again with his unyielding support and even more unyielding...six-pack abs.</p>
+            <br>
+            <p>Suddenly their little experiment feels dangerously close to combustion. And Olive discovers that the only thing more complicated than a hypothesis on love is putting her own heart under the microscope.</p>
+        </section>
+    </main>
+    <!-- End of Main section -->
+
+    <!-- Footer section -->
+    <footer>
+
+        <!-- Navigation bar with links inside -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">
+                        About Us
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Privacy Policy
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Terms
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Copyright
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        Contact Us
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- End of navigation bar -->
+
+    </footer>
+    <!-- End of Footer section -->
+    
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Nguyen Hoang Minh
+ID: s3977773
+Acknowledgement: 
+Utopia icons created by Good Ware - Flaticon (https://www.flaticon.com/free-icons/utopia)
+CSS and HTML inspirations from w3schools.com and stackoverflow.com:
+https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
+https://stackoverflow.com/questions/4309950/how-to-align-input-forms-in-html
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/images/logo.png" type="image/x-icon">
+    <!-- <a href="https://www.flaticon.com/free-icons/utopia" title="utopia icons">Utopia icons created by Good Ware - Flaticon</a> -->
+</head>
+
+<!-- Start of page -->
+<body>
+
+    <!-- Start of header section -->
+    <header>    
+
+        <!-- Navigation bar -->
+        <nav>
+
+            <!-- Logo div with link to home page -->
+            <div>
+                <a id="logo" href="index.html">
+                    <img id="logo-picture" src="assets/images/logo.png" alt="Booktopia logo">
+                    <h1 id="logo-text">Booktopia</h1>
+                </a>
+            </div>
+
+            <!-- Actual navigation bar with links -->
+            <ul>
+                <li>    
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="category_1.html">Fiction</a>
+                </li>
+                <li>
+                    <a href="category_2.html">Non-fiction</a>
+                </li>
+            </ul>  
+        </nav>
+    </header>
+    <!-- End of header section -->
+
+    <!-- Start of Main section -->
+    <main>
+
+        <!-- Breadcrumb section -->
+        <section class="breadcrumb">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="category_2.html">Non-Fiction</a>
+                </li>
+                <li>
+                    <p>Air Fryer Cookbook</p>
+                </li>
+            </ul>
+        </section>
+        
+        <!-- Picture and price section -->
+        <section class="picture-section">    
+
+            <!-- Pictures div -->
+            <div class="left-container">
+                <div class="book-images">
+                    <div class="cover">
+                        <img src="assets/images/non-fiction-cooking/book14.png" alt="Air Fryer Cookbook">
+                    </div>
+                    <div class="small">
+                        <img src="assets/images/non-fiction-cooking/book14-1.png" alt="Air Fryer Cookbook">
+                        <img src="assets/images/non-fiction-cooking/book14-2.png" alt="Air Fryer Cookbook">
+                        <img src="assets/images/non-fiction-cooking/book14-3.png" alt="Air Fryer Cookbook">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Price div -->
+            <div class="right-container">
+                <h1>$10.90 USD</h1>
+                <button>Add to cart</button>
+            </div>
+        </section>
+
+        <!-- Book description section -->
+        <section class="detail-section">
+            <h1>Air Fryer Cookbook</h1>
+            <h2>Rockridge Press</h2>
+            <p>600 Easy Air Fryer Recipes for Quick & Hassle-Free Frying!</p>
+            <br>
+            <p>I bet you crave simple, no-fuss air fryer recipes! That's why I decided to create the best air fryer cookbook with 600 delicious & easy meals that you'll ever need to cook in your air fryer!</p>
+            <br>
+            <p>This air fryer cookbook for beginners has plenty of content in the following categories:</p>
+            <br>
+            <p>+ Lots of Poultry, Beef, and Pork air fryer recipes</p>
+            <br>
+            <p>+ Quick Snacks and Side Dishes</p>
+            <br>
+            <p>+ Vegetables and Vegetarian air fryer recipes</p>
+            <br>
+            <p>+ Great variety of Breakfast & Lunch recipes</p>
+            <br>
+            <p>+ The Most-Wanted healthy air fryer recipes for Sweets & Desserts</p>
+            <br>
+            <p>This complete Air Fryer recipes cookbook will take care of your scarce cooking time and will show you the easiest & tastiest way towards a whole new life with your air fryer.</p>
+            <br>
+            <p>Get it now and do yourself a big favor! Get the best air fryer recipes and you will love it!</p>
+        </section>
+    </main>
+    <!-- End of Main section -->
+
+    <!-- Footer section -->
+    <footer>
+
+        <!-- Navigation bar with links inside -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">
+                        About Us
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Privacy Policy
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Terms
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Copyright
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        Contact Us
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- End of navigation bar -->
+
+    </footer>
+    <!-- End of Footer section -->
+    
+</body>
+</html>

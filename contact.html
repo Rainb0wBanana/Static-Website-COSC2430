@@ -1,3 +1,16 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Nguyen Hoang Minh
+ID: s3977773
+Acknowledgement: 
+Utopia icons created by Good Ware - Flaticon (https://www.flaticon.com/free-icons/utopia)
+CSS and HTML inspirations from w3schools.com and stackoverflow.com:
+https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
+https://stackoverflow.com/questions/4309950/how-to-align-input-forms-in-html
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,22 +23,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
     <link rel="icon" href="assets/images/logo.png" type="image/x-icon">
-    <!-- <a href="https://www.flaticon.com/free-icons/utopia" title="utopia icons">Utopia icons created by Good Ware - Flaticon</a> -->
 </head>
+
+<!-- Start of page -->
 <body>
-    <header>    
+
+    <!-- Start of header section -->
+    <header> 
+        
+        <!-- Navigation bar -->
         <nav>
-              <div>
+
+            <!-- Logo div with link to home page-->
+            <div>
                 <a id="logo" href="index.html">
                     <img id="logo-picture" src="assets/images/logo.png" alt="Booktopia logo">
                     <h1 id="logo-text">Booktopia</h1>
                 </a>
-              </div>
-              <ul>
+            </div>
+
+            <!-- Actual navigation bar with links -->
+            <ul>
                 <li>    
-                    <a href="index.html">
-                        Home
-                    </a>
+                    <a href="index.html">Home</a>
                 </li>
                 <li>
                     <a href="category_1.html">Fiction</a>
@@ -33,43 +53,55 @@
                 <li>
                     <a href="category_2.html">Non-fiction</a>
                 </li>
-              </ul>  
+            </ul>  
         </nav>
     </header>
+    <!-- End of header section -->
 
     <main>
+
+        <!-- Page header  -->
         <h1 id="page-header">Contact Us</h1>
+        
+        <!-- Contact us section -->
         <section class="contact">
+
+            <!-- Start of form -->
             <form method="post">
+
+                <!-- I made the form a table with p tags as table rows and labels, inputs as table cells -->
+                
+                <!-- Contact purpose -->
                 <p>
                     <label for="contact-purpose">Contact purpose:<span>*</span></label>
                     <select name="contact-purpose" id="contact-purpose" required>
+                        <option value="">-What is your concern-</option>
                         <option value="Sell books">I want to sell books</option>
                         <option value="Buy books">I want to buy books</option>
                     </select>
                 </p>
 
-
+                <!-- Name -->
                 <p>
                     <label for="name">Name:<span>*</span></label>
-                    <input name="name" id="name" type="text" required>
+                    <input name="name" id="name" type="text" placeholder="Your name goes here" required>
                 </p>
 
-
+                <!-- Email -->
                 <p>
                     <label for="email">Email:<span>*</span></label>
-                    <input name="email" id="email" type="text" required>
+                    <input name="email" id="email" type="text" placeholder="Your email goes here" required>
                 </p>
 
-
+                <!-- Phone number -->
                 <p>
                     <label for="phone">Phone:<span>*</span></label>
-                    <input name="phone" id="phone" type="text" required>
+                    <input name="phone" id="phone" type="text" placeholder="Your number goes here" required>
                 </p>
 
-
+                <!-- Contact preference -->
                 <p>
-                    <label>Contact Preferences:<span>*</span></label>
+                    <label for="contact-preference">Contact Preferences:<span>*</span></label>
                     
                     <label class="container-checkbox">By email
                         <input type="checkbox" id="prefer-email" name="contact-preference" value="By-email" required>
@@ -82,7 +114,7 @@
                     </label>
                 </p>
                 
-                
+                <!-- Weekly newsletter -->
                 <p>
                     <label for="newsletter">Receive weekly newsletter:<span>*</span></label>
                     
@@ -97,17 +129,17 @@
                     </label>
                 </p>
                 
-                
+                <!-- Extra notes -->
                 <p>
                     <label for="notes">Extra notes:</label>
                     
-                    <textarea name="" id="" cols="25" rows="5" placeholder="Anything you want us to know?"></textarea>
+                    <textarea name="notes" id="notes" rows="5" placeholder="Anything you want us to know?"></textarea>
                 </p>
 
-
+                <!-- Reset and submit button -->
                 <p>
 
-                    <label><button type="reset">Clear</button></label>
+                    <label id="reset-label"><button type="reset">Clear</button></label>
                     <label id="submit-label"><button type="submit">Submit</button></label>
                 </p>
 
@@ -115,37 +147,43 @@
         </section>
     </main>
 
+    <!-- Footer section -->
     <footer>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">
-                            About Us
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Privacy Policy
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Terms
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Copyright
-                        </a>
-                    </li>
-                    <li>
-                        <a href="contact.html">
-                            Contact Us
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+
+        <!-- Navigation bar with links inside -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">
+                        About Us
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Privacy Policy
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Terms
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Copyright
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        Contact Us
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- End of navigation bar -->
+
     </footer>
+    <!-- End of Footer section -->
     
 </body>
 </html>
