@@ -10,6 +10,8 @@ CSS and HTML inspirations from w3schools.com and stackoverflow.com:
 https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
 https://stackoverflow.com/questions/4309950/how-to-align-input-forms-in-html */
 
+
+
 * {
     font-size: 62.5%;
     font-family: "Nunito", sans-serif;
@@ -32,6 +34,7 @@ body {
     background-color: white;
 }
 
+/* Centering the header and setting the height and color */
 header {
     display: flex;
     justify-content: center;
@@ -40,6 +43,7 @@ header {
     height: 100px;
 }
 
+/* Making the main div a column flexbox so that each new section will be added below the previous */
 main {
     display: flex;
     justify-content: flex-start;
@@ -47,6 +51,8 @@ main {
     flex-direction: column;
 }
 
+
+/* Each section styles */
 section {
     display: flex;
     width: 80%;
@@ -56,15 +62,18 @@ section {
     text-align: center;
 }
 
+/* Styles for the video at the start */
 iframe {
     width: 80%;
     height: 500px;
 }
 
+/* Styles for the breadcrumb elements */
 .breadcrumb li {
     border: none;
 }
 
+/* Making the right arrow for the breadcrumb links */
 .breadcrumb a:after {
     position: relative;
     content: "";
@@ -77,11 +86,12 @@ iframe {
     transform: rotate(-45deg);
 }
 
-
+/* Overidding the flex direction for the picture section in the book detail page */
 .picture-section {
     flex-direction: row;
 }
 
+/* Styles the text portion of the book detail page */
 .detail-section {
     padding: 15px;
     background-color: #b2cefe;
@@ -89,6 +99,7 @@ iframe {
     text-align: left;
 }
 
+/* Styling the text in detail section */
 .detail-section h1 {
     margin-top: 5px;
     margin-bottom: 5px;
@@ -104,6 +115,7 @@ iframe {
     font-size: 2rem;
 }
 
+/* Styles for the footer */
 footer {
     padding-top: 25px;
     padding-bottom: 15px;
@@ -113,6 +125,8 @@ footer {
     background-color:#b2cefe;
     align-items: center;
 }
+
+/* Styling the logo div */
 #logo {
     display: flex;
     align-items: center;
@@ -130,6 +144,7 @@ footer {
     height: 80px;
 }
 
+/* Main component for nav bars and breadcrumb links */
 ul {
     margin: 0px;
     list-style-type: none;
@@ -140,15 +155,18 @@ ul {
 
 li {
     font-size: 4rem;
+    /* Styling the border */
     border-right: 2px solid black;
     padding-left: 15px;
     padding-right: 15px;
 }
 
+/* Making the last element of the list not have a border */
 li:last-child {
     border-right: none;
 }
 
+/* Styling the nav element to be centered */
 nav {
     display: flex;
     justify-content: space-between;
@@ -158,6 +176,7 @@ nav {
     text-align: center;
 }
 
+/* Styling anchor tags (links) */
 a {
     display: flex;
     text-decoration: none; 
@@ -172,11 +191,12 @@ a:hover {
 }
 
 
-
+/* Styling the nav for the footer */
 footer nav {
     justify-content: flex-end;
 }
 
+/* Each individual header div for the category page */
 .category {
     display: flex;
     justify-content: center;
@@ -185,34 +205,40 @@ footer nav {
     margin-bottom: 20px;
 }
 
+/* Styling the individual books in the home page or category pages */
 .book-div {
     display: flex;
     height:90%;
     justify-content: space-evenly;
 }
 
+/* Applying width for each book cover div */
 .book {
     width: 25%;
 }
 
+/* Applying picture properties for images in the book cover div */
 .book img {
     width:100%;
     aspect-ratio: 2 / 3;
-}
-
-.book div h3 {
-    text-align: center;
-    vertical-align: center;
 }
 
 .book img:hover {
     scale: 1.02;
 }
 
+/* Styling the book name and author */
+.book div h3 {
+    text-align: center;
+    vertical-align: center;
+}
+
+/* Adding margin to the page header id */
 #page-header {
     margin-top: 50px;
 }
 
+/* Applying styles for the contact section */
 .contact {
     background-color: #b2cefe;
     width:40%;
@@ -227,6 +253,7 @@ form {
 p {
     display: table-row;
 }
+
 label {
     display: table-cell;
     text-align: right;
@@ -236,14 +263,16 @@ label {
 input {
     display: table-cell;
 }
+
+/* Styling the buttons */
 button {
     display: table-cell;
-    scale: 1;
     font-size: 2rem;
     outline: none;
     border: none;
     cursor: pointer;
     background-color: #eee;
+    /* Spacing the buttons */
     margin-top: 15px;
     margin-right: 20px;
     margin-left: 20px;
@@ -256,6 +285,7 @@ button:hover {
     background-color: #2196F3;
 }
 
+/* Different styles for the reset and submit buttons */
 #reset-label button {
     color: red;
 }
@@ -270,6 +300,8 @@ button:hover {
     text-align: left;
 }
 
+
+/* Styling elements inside the form table */
 label, select, input {
     margin: 5px;
     margin-top: 10px;
@@ -428,6 +460,7 @@ label span {
     background: white;
 }
 
+/* Book detail pictures container */
 .left-container {
     width:66%;
 }
@@ -436,27 +469,7 @@ label span {
     scale: 1.05;
 }
 
-.right-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 33%;
-}
-
-.right-container h1 {
-    font-size: 5rem;
-}
-
-.right-container button {
-    font-size: 5rem;
-}
-
-.right-container button:hover {
-    transition: 0.2s linear;
-    background-color: #2196F3;
-}
-
+/* Styling elements in the pictures container of detail page */
 .book-images {
     display: flex;
     flex-direction: row;
@@ -487,6 +500,31 @@ label span {
     margin-bottom: 10px;
 }
 
+/* Book detail price container flexbox */
+.right-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 33%;
+}
+
+/* Styling the book detail price containers */
+.right-container h1 {
+    font-size: 5rem;
+}
+
+.right-container button {
+    font-size: 5rem;
+}
+
+.right-container button:hover {
+    transition: 0.2s linear;
+    background-color: #2196F3;
+}
+
+
+
 
 /* Responsive for mobile devices */
 
@@ -497,15 +535,18 @@ label span {
         height: 100%;
     }
 
+    /* Making the navigation tags vertical */
     nav {
         flex-direction: column;
     }
 
+    /* Adjusting the ul and li tags for mobile */
     ul {
         padding-left: 0px;
         flex-direction: column;
     }
 
+    /* Same as desktop version, just moving the border to the bottom */
     li {
         margin-bottom: 15px;
         border-right: none;
@@ -517,10 +558,12 @@ label span {
         border-bottom: none;
     }
 
+    /* Adjusting video height for mobile */
     iframe {
         height: 250px;
     }
 
+    /* Adjusting sections' margins */
     section {
         margin-top: 0px;
     }
@@ -533,29 +576,35 @@ label span {
         font-size: 4rem;
     }
 
+    /* Making the books in the home page and category page display vertically instead of horizontally */
     .book-div {
         flex-direction: column;
     }
 
+    /* Making the book divs take up full div width */
     .book {
         margin-top: 20px;
         width: 100%;
     }
 
+    /* Adjusting the spacing of book name and author */
     .book h3 {
         margin-top: 5px;
         margin-bottom: 5px;
     }
 
+    /* Adjusting page header styles */
     #page-header {
         font-size: 5rem;
         margin-top: 20px;
     }
 
+    /* Adjusting the width of the contact form section */
     .contact {
         width: 90%;
     }
 
+    /* Changing the form to a flexbox that displays elements inside vertically */
     form {
         display: flex;
         flex-direction: column;
@@ -567,11 +616,13 @@ label span {
         align-items: flex-start;
     }
     
+    /* Adjusting the buttons' block */
     #end-of-form {
         flex-direction: row;
         justify-content: flex-start;
     }
 
+    /* Adjusting the styles for the button */
     button {
         padding: 0px;
         margin-right: 5px;
@@ -579,6 +630,7 @@ label span {
         height: 100%;
     }
 
+    /* Adjusting the breadcrumb elements */
     .breadcrumb {
         width: 90%;
         text-align: left;
@@ -592,6 +644,7 @@ label span {
         align-items: flex-start;
     }
 
+    /* Adjusting font sizes */
     .breadcrumb a, .breadcrumb p {
         font-size: 2rem;
     }
@@ -600,6 +653,7 @@ label span {
         margin: 0;
     }
 
+    /* Adjusting so that the pictures are shown vertically instead of vertically */
     .picture-section {
         margin-top: 10px;
         margin-bottom: 20px;
@@ -607,32 +661,39 @@ label span {
         flex-direction: column;
     }
 
+    /* Making the left-container take full width */
     .left-container {
         width: 100%;
     }
 
+    /* Making the pictures display horizontally (cover page on top and smaller images on the bottom) */
     .book-images {
         flex-direction: column;
     }
 
+    /* Making small pictures div take full width and display the smaller pictures horizontally */
     .small {
         margin-top: 10px;
         flex-direction: row;
         width: 100%;
     }
 
+    /* Making the cover picture div take full width */
     .cover {
         width: 100%;
     }
-    
+
+    /* Making the cover image take full width */
     .cover img {
         width: 100%;
     }
 
+    /* Making the right-container take up full width */
     .right-container {
         width: 100%;
     }
 
+    /* Adjusting text and button styles of the price and add to cart button */
     .right-container h1, .right-container button {
         font-size: 4.5rem;
         margin-left: 0px;
@@ -640,10 +701,12 @@ label span {
         margin-bottom: 20px;
     }
 
+    /* Making the detail section take up 90% while considering the 30 pixel padding */
     .detail-section {
         width: calc(90% - 30px);
     }
     
+    /* Adjusting book name (h1) and author name (h2) header font sizes for mobile */
     .detail-section h1 {
         font-size: 3.5rem;
     }
